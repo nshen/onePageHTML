@@ -1,4 +1,16 @@
-﻿<html>
+﻿<!DOCTYPE html>
+<!--  
+各种遗留的doctype写法
+
+<!DOCTYPE html>
+<!DOCTYPE html PUBLIC"-//W3C//DTD HTML 4.01 Transitional//EN""http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE html PUBLIC"-//W3C//DTD XHTML 1.0 Transitional//EN" xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC"-//W3C//DTD XHTML 1.0 Strict//EN""http://www.w3.org/TR/xhtml1/DTD/ xhtml1-strict.dtd">
+<?xml version="1.0" ?>
+
+-->
+
+<html>
 
 	<head>
 		<title>one page HTML5</title>
@@ -8,95 +20,86 @@
 		<meta http-equiv="author" content="nshen" />
 		<meta http-equiv="pragma" content="no-cache" /> <!-- 禁止浏览器缓存此页 -->
 		<meta http-equiv="expires" content="Fri, 04 Apr 2014 23:59:59 GMT" />  <!-- 没什么用，到期后不许浏览器缓存 -->
+		
+		<link href="css/normalize.css" rel="stylesheet" />
+		<link href="css/style.css" rel="stylesheet" />
 	</head>
 
 	<body>		
+
+		<h1>一页纸学会html5+css ,解说文字会以这种格式出现, 右键打开源文件,与本页对照来看</h1>
+		<h2 class="title" >  HTML默认标签 </h2>
 	
-		<p class="myText">一页纸学会html5+css ,解说文字会以这种格式出现, 右键打开源文件,与本页对照来看</p>
+				
+		<pre> 统一浏览器行为：
+			&lt; a href="https://necolas.github.io/normalize.css/">Normalize.css</a>
+		</pre>
 
-		<p class="myText">各种doctype类型</p>
-		<!--  
-
-		<!DOCTYPE html>
-		<!DOCTYPE html PUBLIC"-//W3C//DTD HTML 4.01 Transitional//EN""http://www.w3.org/TR/html4/loose.dtd">
-		<!DOCTYPE html PUBLIC"-//W3C//DTD XHTML 1.0 Transitional//EN" xhtml1-transitional.dtd">
-		<!DOCTYPE html PUBLIC"-//W3C//DTD XHTML 1.0 Strict//EN""http://www.w3.org/TR/xhtml1/DTD/ xhtml1-strict.dtd">
-		<?xml version="1.0" ?>
-
-		-->
-		<hr />
-
-
-		<p class="myText">Heading [h1] ~ [h6]标签</p>
+		<h3 class="myText">Heading &lt;h1&gt; ~ &lt;h6&gt;标签</h3>
 		
-		<h1>This is a Main Heading</h1>
-		<h2>This is a Level 2 Heading</h2>
-		<h3>This is a Level 3 Heading</h3>
-		<h4>This is a Level 4 Heading</h4>
-		<h5>This is a Level 5 Heading</h5>
-		<h6>This is a Level 6 Heading</h6>
+		<h1>&lt;h1&gt; This is a Main Heading</h1>
+		<h2>&lt;h2&gt; This is a Level 2 Heading</h2>
+		<h3>&lt;h3&gt; This is a Level 3 Heading</h3>
+		<h4>&lt;h4&gt; This is a Level 4 Heading</h4>
+		<h5>&lt;h5&gt; This is a Level 5 Heading</h5>
+		<h6>&lt;h6&gt; This is a Level 6 Heading</h6>
 	
-		<p class="myText">水平线[hr]</p>
+		<h3 class="myText">水平线 &lt;hr&gt;</h3>
 		<hr />
 		
-		<p class="myText">段落[p]，每个段落会自动另起行,[b]粗体,[i]斜体,[br]换行</p>
-		<p>A paragraph consists of one or more sentences that form a self-contained u使得发达省份nit of discourse. The start of a paragraph is indicated by a new line.</p>
-		<p>Text is easier to understand when it    中间有连续空格会被视为一个空格
+		<h3 class="myText">文本标签： 段落 &lt;p&gt;，每个段落会自动另起行，&lt;b&gt; 粗体 ，&lt;i&gt; 斜体， &lt;br&gt;换行</h3>
+		<p>A paragraph consists of one or more sentences that form a self-contained unit of discourse. The start of a paragraph is indicated by a new line.</p>
+		<p>Text is easier to understand when it    (中间有连续空格会被视为一个空格)
 
 
 
-		is split up into units of text. For example, <b>[b]粗体</b>a book may have chapters. <i>[i]斜体斜体</i>Chapters can have subheadings. Under each heading there will换行得自己加[br] <br /> be one or more paragraphs.</p>
+		is split up into units of text. For example, <b>[b]插入粗体bold</b> la book may have chapters. <i>[i]插入斜体italic</i> Chapters can have subheadings. Under each heading there will (换行得自己加[br]) <br /> be one or more paragraphs.</p>
 
-		<p class="myText">上标[sup] , 下标[sub]</p>
+		<h3 class="myText">上标&lt;sup&gt; , 下标 &lt;sub&gt; </h3>
 		<p>On the 4<sup>th</sup> of September you will learn about E=MC<sup>2</sup>.</p>
 		<p>The amount of CO<sub>2</sub> in the atmosphere grew by 2ppm in 2009<sub>1</sub>.</p>
 
-		<p class="myText">@语意semantic markup</p>
+		<h3 class="myText">@语意semantic markup</h3>
 		<hr />
-		<p class="myText">[Strong] 加强语气，表示此词非常重要 ，浏览器默认会显示为黑体</p>
+		<h3 class="myText">&lt;strong&gt; 加强语气，表示此词非常重要 ，浏览器默认会显示为 font-weight: bolder </h3>
 		<p><strong>Beware:</strong> Pickpockets operate in this area.</p>
 		<p>This toy has many small pieces and is <strong>not suitable for children under five years old.</strong></p>
 
-		<p class="myText">[em] indicates emphasis that subtly changes the meaning of a sentence.默认显示为斜体</p>
+		<h3 class="myText">&lt;em&gt; indicates emphasis that subtly changes the meaning of a sentence.默认显示为斜体</h3>
 		<p>I <em>think</em> Ivy was the first.</p>
 		<p>I think <em>Ivy</em> was the first.</p>
 		<p>I think Ivy was the <em>first</em>.</p>
 
-		<p class="myText">引用[blockquote]</p>
+		<h3 class="myText">引用&lt;blockquote&gt;</h3>
 		<blockquote cite="http://en.wikipedia.org/wiki/Winnie-the-Pooh">
 			<p>Did you ever stop to think, and forget to start again?</p>
 		</blockquote>
-		<p class="myText">短引用[q]，默认会加引号，ie不支持</p>
+
+		<h3 class="myText">短引用&lt;q&gt;，默认会加引号，ie不支持</h3>
 		<p>As A.A. Milne said, <q>Some people talk to animals. Not many listen though. That's the problem.</q></p>
 
-		<p class="myText">缩写词，鼠标移上会显式全文</p>
+		<h3 class="myText">缩写词&lt;abbr title="" &gt;，&lt;acrony title="" &gt; 鼠标移上会显式全文</h3>
 		<p><abbr title="Professor">Prof</abbr> Stephen Hawking is a theoretical physicist and cosmologist.</p>
 		<p><acronym title="National Aeronautics and Space Administration">NASA</acronym> do some crazy space stuff.</p>
 
-		
-		<p class="myText">[cite]引用（书名电影名等）默认斜体</p>
+		<h3 class="myText">&lt;cite&gt;引用（书名电影名等）默认斜体</h3>
 		<p><cite>A Brief History of Time</cite> by Stephen Hawking has sold over ten million copies worldwide.</p>
 
-		<p class="myText">[dfn] 解释术语</p>
+		<h3 class="myText">第一次出现的新术语，用&lt;dfn&gt; 解释，默认斜体</h3>
 		<p>A <dfn>black hole</dfn> is a region of space from which nothing, not even light, can escape.</p>
-		address
+
+		<h3 class="myText">&lt;address&gt;，通常默认为斜体</h3>
 		<address>
 			<p><a href="mailto:homer@example.org">homer@example.org</a></p>
 			<p>742 Evergreen Terrace, Springfield.</p>
 		</address>
 
-		<p class="myText">插入删除,下划线</p>
+		<h3 class="myText">&lt;del&gt;插入删除，&lt;ins&gt;下划线，&lt;s&gt;表示不再相关或正确，但不删除</h3>
 		<p>It was the <del>worst</del> <ins>best</ins> idea she had ever had.</p>
-		<hr />
 
-		<p class="myText">不准确的，但没删除</p>
-		<p>Laptop computer:</p>
-		<p><s>Was $995</s></p>
-		<p>Now only $375</p>
+		<p>Laptop computer: <s>Was $995</s> Now only $375</p>
 
-		<br />
-
-		<p class="myText">[ol]old列表 可用css属性 liststyle-type</p>
+		<h3 class="myText">&lt;ol&gt; ordered列表, &lt;li&gt; 为 item，可用css属性 liststyle-type</h3>
 		
 		<ol>
 			<li>Chop potatoes into quarters</li>
@@ -106,7 +109,7 @@
 			<li>Mix in the milk mixture</li>
 		</ol>
 
-		<p class="myText">无序列表 可用css属性 liststyle-type</p>
+		<h3 class="myText">&lt;ul&gt;无序列表 可用css属性 liststyle-type</h3>
 		
 		<ul>
 			<li>1kg King Edward potatoes</li>
@@ -116,20 +119,7 @@
 			<li>Salt and pepper to taste</li>
 		</ul>
 
-		
-		<p class="myText">定义列表</p>
-		<dl>
-			<dt>Sashimi</dt>
-			<dd>Sliced raw fish that is served with condiments such as shredded daikon radish or ginger root, wasabi and soy sauce</dd>
-			<dt>Scale</dt>
-			<dd>A device used to accurately measure the weight of ingredients</dd>
-			<dd>A technique by which the scales are removed from the skin of a fish</dd>
-			<dt>Scamorze</dt>
-			<dt>Scamorzo</dt>
-			<dd>An Italian cheese usually made from whole cow's milk (although it was traditionally made from buffalo milk)</dd>
-		</dl>
-
-		<p class="myText">嵌套列表</p>
+		<h3 class="myText">嵌套列表</h3>
 		<ul>
 			<li>Mousses</li>
 			<li>Pastries
@@ -142,10 +132,21 @@
 			</li>
 			<li>Tarts</li>
 		</ul>
+		
+		<h3 class="myText">&lt;dl&gt; 定义列表，&lt;dt&gt;一个定义，&lt;dd&gt; 对应的解释</h3>
+		<dl>
+			<dt>Sashimi</dt>
+			<dd>Sliced raw fish that is served with condiments such as shredded daikon radish or ginger root, wasabi and soy sauce</dd>
+			<dt>Scale</dt>
+			<dd>A device used to accurately measure the weight of ingredients</dd>
+			<dd>A technique by which the scales are removed from the skin of a fish</dd>
+			<dt>Scamorze</dt>
+			<dt>Scamorzo</dt>
+			<dd>An Italian cheese usually made from whole cow's milk (although it was traditionally made from buffalo milk)</dd>
+		</dl>
 
-		<hr />
 
-		<p class="myText">[a]链接</p>
+		<h3 class="myText">&lt;a&gt; 链接</h3>
 		
 
 		<ul>
@@ -156,16 +157,16 @@
 		</ul>
 
 
-		<p class="myText">target属性,新窗口打开</p>
+		<h4> target属性,新窗口打开</h4>
 		<p><a href="http://www.imdb.com" target="_blank">Internet Movie Database</a> (opens in new window) </p>
 
 
-		<p class="myText">email link</p>
+		<h4>email link ：  mailto</h4>
 		<a href="mailto:jon@example.org">Email Jon</a>
 
-		<p class="myText">href可以指定#id,在本页跳转到id </p>
+		<h4 >&lt;a href="#id&gt; 可以指定#id,在本页跳转到 id 属性 </h4>
 
-		<h1 id="top">Film-Making Terms</h1>
+		<p id="top">Film-Making Terms</p>
 		<a href="#arc_shot">Arc Shot</a><br />
 		<a href="#interlude">Interlude</a><br />
 		<a href="#prologue">Prologue</a><br /><br />
@@ -178,25 +179,30 @@
 		<p>A speech, preface, introduction, or brief scene preceding the main action or plot of a film; contrast to epilogue</p>
 		<p><a href="#top">Top</a></p>
 
-		<br />
-		<hr />
+		<h3 class="myText">&lt;img&gt; 插入图片，指定大小</h3>
 
-		<p class="myText">插入图片,指定大小</p>
 		<img src="images/quokka.jpg" alt="Quokka (Setonix brachyurus)" title="这里是tooltip" />
 		<img src="images/quokka.jpg" alt="Quokka (Setonix brachyurus)" width="60" height="45" />
 
-		<p>图片与文字混排</p>
+		<h4> &lt;figure&gt; 给图片加解释文字 </h4>
+		<figure>
+			<img src="images/otters.jpg" alt="Photograph of two sea otters floating in water" />
+			<br />
+			<figcaption>Sea otters hold hands when they sleep so they don't drift away from each other.</figcaption>
+		</figure>
 
-		<div style="width:450">
+		<h3 class="myText">图片与文字混排</h3>
 
-			<p class="myText">图片在[p]之上</p>
+		<div style="width:450px">  <!--为了看出效果这里加了宽度限制-->
+
+			<p >图片在段落&lt;p&gt;之上</p>
 			<img src="images/bird.gif" alt="Bird" width="100" height="100" />
 			<p>There are around 10,000 living species of birds that inhabit different ecosystems from the Arctic to the Antarctic. Many species undertake long distance annual migrations, and many more perform shorter irregular journeys.</p>
 			
-			<p class="myText">图片在[p]内第一行</p>
+			<p >图片在&lt;p&gt;标签内部第一行</p>
 			<p><img src="images/bird.gif" alt="Bird" width="100" height="100" /> There are around 10,000 living species of birds that inhabit different ecosystems from the Arctic to the Antarctic. Many species undertake long distance annual migrations, and many more perform shorter irregular journeys.</p>
 			
-			<p class="myText">图片在[p]内文字中间</p>
+			<p >图片在&lt;p&gt;内文字中间</p>
 			<p>There are around 10,000 living species of birds that inhabit different ecosystems from the Arctic to the Antarctic. <img src="images/bird.gif" alt="Bird" width="100" height="100" /> Many species undertake long distance annual migrations, and many more perform shorter irregular journeys.</p>
 			
 
@@ -217,7 +223,10 @@
 			<p>align bottom 底部与第一行对齐</p>
 			<p><img src="images/bird.gif" alt="Bird" width="100" height="100" align="bottom" /> There are around 10,000 living species of birds that inhabit different ecosystems from the Arctic to the Antarctic. Many species undertake long distance annual migrations, and many more perform shorter irregular journeys.</p>
 
-	<p class="myText">小知识</p>
+
+		</div>
+
+			<p class="myText">小知识</p>
 			<blockquote cite="http://en.wikipedia.org/wiki/Winnie-the-Pooh">		
 				<p>Computer screens are made up
 					of dots known as pixels. Images
@@ -230,23 +239,33 @@
 					a higher resolution results in
 					images that are larger than
 					necessary and take longer to
-					download.<br />
+					download.<br /
 					颜色多的照片用jpeg，颜色少的图片用png或gif
 				</p>
 			</blockquote>
 
-		<p class="myText">[figure] 给图片加解释文字</p>
-			<figure>
-				<img src="images/otters.jpg" alt="Photograph of two sea otters floating in water" />
-				<br />
-				<figcaption>Sea otters hold hands when they sleep so they don't drift away from each other.</figcaption>
-			</figure>
-		</div>
-		<hr />
 
+		<h3 class="myText">&lt;table&gt; 表格: tr是行，td是列</h3>
 
-		<p class="myText">表格: tr是行，td是列  (为了看清楚加了样式)</p>
+		<table>
+			<tr>
+				<td >15</td>
+				<td >15</td>
+				<td >30</td>
+			</tr>
+			<tr>
+				<td>45</td>
+				<td>60</td>
+				<td>45</td>
+			</tr>
+			<tr>
+				<td>60</td>
+				<td>90</td>
+				<td>90</td>
+			</tr>
+		</table>
 
+		<p>为了看清楚加了样式后 </p> 
 
 		<table class="clear">
 			<tr>
@@ -267,7 +286,8 @@
 		</table>
 
 
-		<p class="myText">th加header  (为了看清楚加了样式)</p>
+
+		<p >&lt;th&gt; 加 header (为了看清楚加了样式)</p>
 
 		<table class="clear">
 			<tr>
@@ -287,7 +307,7 @@
 			</tr>
 		</table>
 
-		<p class="myText">colspan横跨几列  (为了看清楚加了样式)</p>
+		<p > td 属性 colspan 横跨几列  (为了看清楚加了样式)</p>
 
 		<table class="clear">
 			<tr>
@@ -311,7 +331,7 @@
 		</table>
 
 
-		<p class="myText">rowspan纵跨几行  (为了看清楚加了样式)</p>
+		<p > td 的属性 rowspan 纵跨几行  (为了看清楚加了样式)</p>
 
 		<table class="clear">
 			<tr>
@@ -334,7 +354,7 @@
 		</table>
 
 
-		<p class="myText">Long Table [thead] [tfoot]  (为了看清楚加了样式)</p>
+		<p>Long Table 加 &lt;lthead&gt; &lt;tbody&gt; &lt;tfoot&gt; 可以单独用css改变样子 (为了看清楚加了样式)</p>
 
 		<table class ="clear">
 			<thead>
@@ -510,7 +530,7 @@
 			</tfoot>
 		</table>
 
-		<p class="myText"> 过时的属性 WidTh & spacing 建议用css代替 (为了看清楚加了样式)</p>
+		<p > 过时的属性 width & cellpadding celspacing 不应使用，建议用css代替 (为了看清楚加了样式)</p>
 		<table class="clear" width="400" cellpadding="10" cellspacing="5">
 			<tr>
 				<th width="150"></th>
@@ -532,7 +552,7 @@
 			</tr>
 		</table>
 
-		<p>border & background，过时属性</p>
+		<p>border & bgcolor，过时属性，不应再用，应改用css</p>
 		<table border="2" bgcolor="#efefef">
 			<tr>
 				<th width="150"></th>
@@ -555,9 +575,27 @@
 		</table>
 		<hr />
 
-		<p class="myText"> form提交表单</p>
+		<h3 class="myText"> &lt;form&gt; 表单 </h3>
+
+		<!--
+		Form表单种类
+
+		Textinput
+		Password input
+		Text area
+
+		Radio buttons
+		Checkboxes
+		Drop-down boxes
+
+		Submit buttons
+		Image buttons
+		File upload
+
+		-->
 		<form action="http://www.example.com/subscribe.php" method="get">
 			<p>Username:
+				<!--size 为过时的属性，不应再用, maxlength 限制长度-->
 				<input type="text" name="username" size="15" maxlength="30" />
 			</p>
 			<p>Password:
@@ -567,17 +605,20 @@
 			<textarea name="comments" cols="20" rows="4">Enter your comments...</textarea>
 			<p>Please select your favorite genre:
 				<br />
+				<!--单选 -->
 				<input type="radio" name="genre" value="rock" checked="checked" /> Rock
 				<input type="radio" name="genre" value="pop" /> Pop
 				<input type="radio" name="genre" value="jazz" /> Jazz
 			</p>
 			<p>Please select your favorite music service(s):
 				<br />
+				<!--多选-->
 				<input type="checkbox" name="service" value="itunes" checked="checked" /> iTunes
 				<input type="checkbox" name="service" value="lastfm" /> Last.fm
 				<input type="checkbox" name="service" value="spotify" /> Spotify
 			</p>
 			<p>What device do you listen to music on?</p>
+			<!-- select 是 Drop DoWn list-->
 			<select name="devices">
 				<option value="ipod">iPod</option>
 				<option value="radio">Radio</option>
@@ -585,6 +626,7 @@
 			</select>
 
 			<p>Do you play any of the following instruments? (You can select more than one option by holding down control on a PC or command key on a Mac while selecting different options.)</p>
+			<!--multiple selection box-->
 			<select name="instruments" size="3" multiple="multiple">
 				<option value="guitar" selected="selected">Guitar</option>
 				<option value="drums">Drums</option>
@@ -593,7 +635,9 @@
 			</select>
 
 			<p>Upload your song in MP3 format:</p>
+			<!--type = file 为上传框-->
 			<input type="file" name="user-song" /><br />
+			<!--type= submit 提交按钮-->
 			<input type="submit" value="Upload" />
 	
 			<p>Subscribe to our email list:</p>
@@ -602,10 +646,12 @@
 
 			<p>Subscribe to our email list:</p> 
 			<input type="text" name="email" />
+			<!--type = image 为图片提交按钮-->
 			<input type="image" src="images/subscribe.jpg" width="100" height="20" />
 
-			<p>button标签可以内插混合图片文字，提交隐藏值</p>
+			<p>button标签可以内插混合图片文字</p>
 			<button><img src="images/add.gif" alt="add" width="10" height="10" /> Add</button>
+			<!--type=hidden ，提交隐藏值-->
 			<input type="hidden" name="bookmark" value="lyrics" />
 
 			<p>label可以包含其他form元素,也可以用for属性指定描述的哪个组件</p>
@@ -617,6 +663,7 @@
 			<input id="male" type="radio" name="gender" value="m">
 			<label for="male">Male</label>
 
+			<!--fieldset 给相关form提供一个框，接着添加一个legend用于标题-->
 			<fieldset>
 				<legend>Contact details</legend>
 				<label>Email:<br /><input type="text" name="email" /></label><br />
@@ -624,9 +671,9 @@
 				<label>Telephone:<br /><input type="text" name="telephone" /></label>
 			</fieldset>
 
-			<p class="myText"> 下边都是html5的forum了，老的浏览器不支持</p>
+			<h3 class="myText"> html5新加的form元素</h3>
 
-			<p>required是html5新的validation的属性</p>
+			<p>required是html5新的validation的属性，对于不支持的浏览器还应该用js作</p>
 			<label for="username">Username:</label>
 			<input type="text" name="username" required="required" /></title> <br />
 			<label for="password">Password:</label>
@@ -634,36 +681,41 @@
 			<input type="submit" value="Submit" />
 
 			<p>日期输入</p>
+			<!--type=date-->
 			<label for="username">Departure date:</label>
 			<input type="date" name="depart" />
 			<input type="submit" value="Submit" />
 
 			<p>email和url输入</p>
+			<!--type = email-->
 			<p>Please enter your email address:</p>
 			<input type="email" name="email" />
 			<input type="submit" value="Submit" />
+			<!--type = url-->
 			<p>Please enter your website address:</p>
 			<input type="url" name="website" />
 			<input type="submit" value="Submit" />
 		</form>
 		<form action="http://www.example.org/search.php">
 			<p>Search:</p>
-			<input type="search" name="search" />
+			<input type="search" placeholder="输入要搜索的文字" name="search" />
 			<input type="submit" value="Search" />
 		</form>
-		<hr />
 		
-		<p class="myText">span和div，是inline和block的典型代表</p>
-		<p>Anish Kapoor won the Turner Prize in 1991 and exhibited at the <span class="upperCase">Tate Modern</span> gallery in London in 2003.</p>
+
+		<h3 class="myText"> block level elements && inline level elements </h3>
 
 		<!--
-			 block 元素<h1>-<h6>, <p> and <div> 
+			block level elements ： 永远重起一行
+			inline level elements : 永远接着同一行出现
+
+			 block 元素<h1>-<h6>, <p>, <ul><li>, <div> 
 			 inline元素<b>, <i>,<img>, <em> and <span>.
 		-->
+		<!--span和div，是inline和block的典型代表-->
 
-		
-
-		<div id="header">
+		<p>Anish Kapoor won the Turner Prize in 1991 and exhibited at the <span class="upperCase">Tate Modern</span> gallery in London in 2003.</p>
+		<div>
 			<img src="images/logo.gif" alt="Anish Kapoor" />
 			<ul>
 				<li><a href="index.html">Home</a></li>
@@ -673,12 +725,13 @@
 			</ul>
 		</div>
 
-		<p class="myText">iframe</p>
+		<h3 class="myText">&lt;iframe&gt;</h3>
+
 		<iframe width="450" height="350" src="http://www.nshen.net" seamless="seamless"></iframe>
 		<iframe src="http://www.nshen.net" width="450" height="350" frameborder="0" scrolling="no"></iframe>
 
 
-		<p class="myText">常见转意符号</p>
+		<h3 class="myText">常见转意符号</h3>
 
 		<div>
 		Copyright	&copy;	&#169;				 <br />
@@ -695,7 +748,7 @@
 		Euro	&euro;	&8364;					 <br />
 		</div>
 
-		<p class="myText">视频 video</p>
+		<h3 class="myText">&lt;video&gt; 视频 </h3>
 		<!-- 
 
 			poster播放之前的图片
@@ -713,20 +766,22 @@
 		</video>
 
 
-		<p class="myText">多种格式支持</p>
+		<p>多种格式支持</p>
+
 		<video poster="images/puppy.jpg" width="400" height="320" preload controls loop autoplay>
 			<source src="video/puppy.mp4" type='video/mp4;codecs="avc1.42E01E, mp4a.40.2"' />
 			<source src="video/puppy.webm" type='video/webm;codecs="vp8, vorbis"' />
 			<p>A video of a puppy playing in the snow</p>
 		</video>
 
-		<p class="myText">插入音频 audio.</p>
+		<h3 class="myText">&lt;audio&gt; 插入音频 </h3>
 		<audio controls >
 			<source src="audio/test-audio.ogg" />
 			<source src="audio/test-audio.mp3" />
 			<p>This browser does not support our audio format.</p>
 		</audio>
 
+		<h3 class="myText"> CSS </h3>
 		<!-- 
 
 		//////////////
@@ -750,33 +805,38 @@
 		//css选择器
 		///////////
 
-		css可以选择元素的id和class
+		Universal selector  		* {} 				匹配所有的元素
+		type selector 				h1,h2,h3 {} 		元素名匹配
+		class selector 				.note {}     		匹配class属性为note的元素
+									p.note {} 			匹配 class为note的<p>标签
+		id selector 				#introduction {}   	匹配id
+		child selector      		li>a {} 			<li>元素的直接child <a>
+		descendant selector 		p a {} 				<p>的任意下级元素<a>
+		adjacent sibling selector   h1+p {} 			<h1>标签相邻的<p>
+		general sibling selector    h1~p {} 			<h1>同级别的<p> 可以不是直接相邻的
+
+
+		最常见的还是选择id和class
 
 		<p id="myid"> id属性是全局属性，不可以有重名的，css可以选取id属性</p>
 		<p class="myClass">class属性可以有重名的,标记同样的class会被css统一控制</p>
 
-		
-
-		*{} //匹配所有的元素
-		h1,h2,h3{} //元素名匹配
-		.note{} //匹配class
-		p.note{} // 匹配 class为note的<p>标签
-		#introduction{} 匹配id
-		p#introduction{}匹配id为introduction的<p>标签
-		li>a{} //<li>元素的直接child <a>
-		p a{} //<p>中的<a>,即使是嵌套的
-		h1+p{} //匹配任意<h1>标签后的第一个<p>
-		h1~p {} //If you had two <p> elements that are siblings of an <h1> element, this rule would apply to both
 
 		////////////
 		//css优先级
 		////////////
 
+		1. 后边的覆盖前边的
+		2. 更详细的覆盖不详细的
+		3. 加 !important; 覆盖所有的
+
+
+
 		<style type="text/css">
 			* {
 				font-family: Arial, Verdana, sans-serif;}
 			h1 {
-				font-family: "Courier New", Courier, monospace;} //比*详细 ,详细的优先不详细的
+				font-family: "Courier New", Courier, monospace;} //比*详细 ,详细的优先
 			i {
 				color: green;}
 			i {
@@ -793,15 +853,20 @@
 				font-size: 75%;}
 		</style>
 
-		继承属性 : 在body上设置,会让所有子对象都被设置
+
+		////////////
+		///继承性 		
+		/////////////
+
 		 
-		例如: font-family color
+		例如: font-family color 为继承性属性，会影响所有子元素
 		
 		非继承属性:不会影响子对象
 
-		例如: background-color border
+		例如: background-color border 为非继承属性，不会影响子标签
 
-		可以用inherit指定继承属性
+		可以用 inherit指定属性继承自父标签
+
 
 		body {
 			font-family: Arial, Verdana, sans-serif;
@@ -811,10 +876,12 @@
 		.page {
 			border: 1px solid #665544;
 			background-color: #efefef;
-			padding: inherit;  //显式继承body的padding属性
+			padding: inherit;  // 显式继承body的padding属性
 		}
 
-		颜色
+		////////////
+		////颜色
+		///////////
 
 		<style type="text/css">
 			body {
@@ -830,15 +897,57 @@
 			/* rgb值 */
 			p {color: rgb(100,100,90);}
 
+            /* hsl css3 新加入的
 
+			参数 
+
+			HUE 颜色圆 0~360度
+			SATURATION 饱和度百分比 100%为完全饱和 0%为灰色
+			LIGHTNESS 亮度 百分比 0%白色 50%正常 100%黑色	
+			ALPHA 0~1 
+
+			background-color: hsla(0,100%,100%,0.5);
+            */
 		</style>
 		-->
-	</body>
 
-	<!-- css选择器 用 h1.backColor -->
-	<h1 class="backColor"> 这里是background-color为DarkCyan,color为white的h1 </h1>
 
-	<h1>pH Scale</h1>
+	<h3 class="title">颜色实例</h3>
+
+	<style>
+				p.zero {
+					background-color: rgb(238,62,128);margin: 0px;color: white;}
+				p.one {
+					background-color: rgb(244,90,139);margin: 0px;color: white;}
+				p.two {
+					background-color: rgb(243,106,152);margin: 0px;color: white;}
+				p.three {
+					background-color: rgb(244,123,166);margin: 0px;color: white;}
+				p.four {
+					background-color: rgb(245,140,178);margin: 0px;color: white;}
+				p.five {
+					background-color: rgb(246,159,192);margin: 0px;color: white;}
+				p.six {
+					background-color: rgb(245,176,204);margin: 0px;color: white;}
+				p.seven {
+					background-color: rgb(0,187,136);margin: 0px;color: white;}
+				p.eight {
+					background-color: rgb(140,202,242);margin: 0px;color: white;}
+				p.nine {
+					background-color: rgb(114,193,240);margin: 0px;color: white;}
+				p.ten {
+					background-color: rgb(84,182,237);margin: 0px;color: white;}
+				p.eleven {
+					background-color: rgb(48,170,233);margin: 0px;color: white;}
+				p.twelve {
+					background-color: rgb(0,160,230);margin: 0px;color: white;}
+				p.thirteen {
+					background-color: rgb(0,149,226);margin: 0px;color: white;}
+				p.fourteen {
+					background-color: rgb(0,136,221);margin: 0px;color: white;}
+	</style>
+
+	<h4>pH Scale</h4>
 	<p class="fourteen">14.0 VERY ALKALINE</p>
 	<p class="thirteen">13.0</p>
 	<p class="twelve">12.0</p>
@@ -855,22 +964,225 @@
 	<p class="one">1.0</p>
 	<p class="zero">0.0 VERY ACID</p>
 
-<hr/>
+	<div id="font_part">
+		<style>
 
-	<p class="myText">字体部分</p>
+			#oblique_style{
+				font-style: oblique;
+			}
 
-	<h1 class="sans-serifFont">Briards 标题字体应该是无衬线字体</h1><!-- 标题字体应该是无衬线的-->
-	<p class="monospaceFont">by Ivy Duckett</p> <!-- 等宽字体,常见于显示代码等 -->
-	<p class="intro">The <a class="breed" href="http://en.wikipedia.org/wiki/Briard">briard</a>, or berger de brie, is a large breed of dog traditionally used as a herder and guardian of sheep.</p>
-	<h2>Breed History</h2>
-	<p class="serifFont">The briard, which is believed to have originated in France, has been bred for centuries to herd and to protect sheep. The breed was used by the French Army as sentries, messengers and to search for wounded soldiers because of its fine sense of hearing. Briards were used in the First World War almost to the point of extinction. Currently the population of briards is slowly recovering. Charlemagne, Napoleon, Thomas Jefferson and Lafayette all owned briards.
-	中文这里显示什么样呢?有衬线字体,宋体行吗?
-	</p>
+			#italic_style{
+				font-style: italic;
+			}
 
-	<p>浏览器默认16像素, 12px = 75% = 0.75em </p>
-	<p id="pixelSize">css中控制字体的大小 </p>
-	<p id="percentSize">css中控制字体的大小</p>
-	<p id="emsSize">css中控制字体的大小</p>
+			#pre_code{
+				font-family: "Source Code Pro", Consolas, Monaco, Menlo, Consolas, monospace;
+			}
+
+
+			#font_part {
+				/*font-family: Tahoma, Arial, Helvetica, "Microsoft YaHei New", "Microsoft Yahei", "微软雅黑", 宋体, SimSun, STXihei, "华文细黑", sans-serif;*/
+				background-color: #f5f5d5;
+			
+			};
+
+			/*无衬线字体 */
+			.sans-serifFont {
+				font-family: Arial, Verdana, Helvetica,"Microsoft YaHei", "微软雅黑", STXihei, "华文细黑",SimHei,"黑体",SimSun, "宋体",sans-serif;
+			}
+			
+
+			/*有衬线字体 */
+			.serifFont{
+				font-family: Georigia, Times, "Times New Roman",SimSun, "宋体",serif;
+			}
+			
+			/*等宽字体 */
+			.monospaceFont{
+				font-family: "Source Code Pro",Consolas,"Courier New", Courier, monospace;
+				font-weight: bold; /*粗细可选值 normal  bold */
+			}
+
+			p#pixelSize{
+				font-size: 12px;
+			}
+			p#percentSize
+			{
+				font-size: 75%;
+			}
+			p#emsSize
+			{
+				font-size:0.75em;
+			}
+
+			#pseudo::first-letter{
+				color: red;
+				font-size: 130%;
+			}
+			#pseudo::first-line{
+				font-weight: bold;
+			}
+
+
+			/*links*/
+
+			#testLinks a:link {
+				color: deeppink;
+				text-decoration: none;}
+			#testLinks a:visited {
+				color: black;}
+			#testLinks a:hover {
+				color: deeppink;
+				text-decoration: underline;
+				}
+			#testLinks a:active {
+				color: darkcyan;
+				}
+
+
+			input.pseudoTest,input.textPseudoTest {
+				padding: 6px 12px 6px 12px;
+				border: 1px solid #665544;
+				color: #ffffff;}
+			input.pseudoTest:hover {
+				background-color: #665544;}
+			input.pseudoTest:active {
+				background-color: chocolate;}
+			input.textPseudoTest {
+				color: #cccccc;}
+			input.textPseudoTest:focus {
+				color:#665544;}
+
+		</style>
+		<h3 class="myText">字体部分</h3>
+		<p>中文字体：http://www.ruanyifeng.com/blog/2014/07/chinese_fonts.html</p>
+
+		衬线字体 serif 印刷中长段文字使用，易读
+		非衬线字体 sans serif 低分辨率，字小很清晰
+		等宽字体 monospace 相等宽度，适用代码
+
+		<h1> font-weight:</h1>
+		<ul>	
+		<li style="font-weight:lighter">lighter</li> 
+		<li style="font-weight:normal">normal</li> 
+		<li style="font-weight:bold">bold</li> 
+		<li style="font-weight:900">number900</li>
+		</ul>
+
+		<h1>font-family:</h1>
+		<h4 class="sans-serifFont">font-family 无衬线字体</h4><!-- 标题字体应该是无衬线的-->
+		<h4 class="serifFont">font-family 有衬线字体</h4><!-- 标题字体应该是无衬线的-->
+		<h4 class="monospaceFont">font-family 等宽字体 用于代码 .monospaceFont{ font-family:"Courier New", Courier, monospace; font-weight: bold; /*粗细可选值 normal  bold */ }</h4> 
+		<!-- 等宽字体,常见于显示代码等 -->
+        
+        <h1>字体大小:</h1>
+		<p>浏览器默认16像素, 12px = 75% = 0.75em </p>
+		<p id="pixelSize">css中控制字体的大小 </p>
+		<p id="percentSize">css中控制字体的大小</p>
+		<p id="emsSize">css中控制字体的大小</p>
+
+        <h1>font-face :</h1>
+		<pre><code id="pre_code">font-family: "Source Code Pro", Consolas, Monaco, Menlo, Consolas, monospace; </code> </pre>
+
+		<h1>font-style: </h1>
+		<p id="oblique_style"> font-style: oblique; </p>
+		<p id="italic_style"> font-style: italic; </p>
+
+		<h1>text-transform:</h1>
+		<p style="text-transform:uppercase">This is text-transform : uppercase 大写</p>
+		<p style="text-transform:lowercase">This is text-transform : lowercase 小写</p>	
+		<p style="text-transform:capitalize">This is text-transform : capitalize 首字母大写</p>	
+
+		<h1> text-decoration: </h1>	
+		<p style="text-decoration:underline"> text-decoration: underline;</p>
+		<p style="text-decoration:none"> text-decoration: none;</p>
+		<p style="text-decoration:overline"> text-decoration: overline;</p>
+		<p style="text-decoration:line-through"> text-decoration: line-through;</p>
+		<p style="text-decoration:blink"> text-decoration: blink;</p>
+
+		<h1>line-height:1.5em  行距</h1>
+		<p style="line-height:1.5em">The briard, which is believed to have originated in France, has been bred for centuries to herd and to protect sheep. The breed was used by the French Army as sentries, messengers and to search for wounded soldiers because of its fine sense of hearing. Briards were used in the First World War almost to the point of extinction. Currently the population of briards is slowly recovering. Charlemagne, Napoleon, Thomas Jefferson and Lafayette all owned briards.</p>
+		<h1>word-spacing && letter-spacing </h1>
+		<p style="word-spacing: 1em;letter-spacing: 0.2em;">The briard, which is believed to have originated in France, has been bred for centuries to herd and to protect sheep. The breed was used by the French Army as sentries, messengers and to search for wounded soldiers because of its fine sense of hearing. Briards were used in the First World War almost to the point of extinction. Currently the population of briards is slowly recovering. Charlemagne, Napoleon, Thomas Jefferson and Lafayette all owned briards.</p>
+
+		<h1>text-align: </h1>	
+		<p style="text-align:left">text-align:left</p>
+		<p style="text-align:right">text-align:right</p>
+		<p style="text-align:center">text-align:center</p>
+		<p style="text-align:justify">We are happy to host in the gotoAndPlay showcase the first game of the RSSGTG category (Retro Soviet Style Gravity Tunnel Game, according to what the authors declared :-D ): it’s Metro.Siberia, and addictive game by Tommy Salomonsson and Simon Stålenhag in which you will have to navigate through three Siberian underground systems trying not to crash your ship.</p>
+		<p style="text-align:left">We are happy to host in the gotoAndPlay showcase the first game of the RSSGTG category (Retro Soviet Style Gravity Tunnel Game, according to what the authors declared :-D ): it’s Metro.Siberia, and addictive game by Tommy Salomonsson and Simon Stålenhag in which you will have to navigate through three Siberian underground systems trying not to crash your ship.</p>
+
+		<h1>vertical-align: </h1>
+		<p>Briard Life Stages</p>
+		<!--并不是用于在div中垂直对齐，可用的值还有很多，还要再研究：
+		baseline
+		sub
+		super
+		top
+		text-top
+		middle
+		bottom
+		text-bottom-->
+		<p><img src="images/six-months.gif" width="50" height="50" alt="Six months" style="vertical-align: text-top;" /> Six months</p>
+		<p><img src="images/one-year.gif" width="50" height="50" alt="One year" style="vertical-align:middle;" /> One year</p>
+		<p><img src="images/two-years.gif" width="50" height="50" alt="Two years" style="vertical-align:bottom" /> Two years</p>
+
+		<h1>text-indent: </h1> <!--首行缩进，允许负值-->
+		<!--把logo文字移走(-9999px)，只留背景图片，对搜索引擎友好-->
+		<h1 style="text-indent:-99999px;background-image: url('images/logo.gif'); background-repeat: no-repeat;width:235px;height:80px;">Briards</h1>
+		<!--首行缩进-->
+		<p style="text-indent:2em;">The briard, which is believed to have originated in France, has been bred for centuries to herd and to protect sheep. The breed was used by the French Army as sentries, messengers and to search for wounded soldiers because of its fine sense of hearing. Briards were used in the First World War almost to the point of extinction. Currently the population of briards is slowly recovering. Charlemagne, Napoleon, Thomas Jefferson and Lafayette all owned briards.</p>
+
+		<h1>text-shadow:</h1>
+		<!--四个参数分别是 左右shadow距离，上下shadow距离，amount,颜色-->
+		<p style="font-size:2em;background-color:#eeeeee;color:#666666;text-shadow:1px 1px 0px #000000;">The briard is known as a heart wrapped in fur. N神的研究所</p>
+		<p style="font-size:2em;background-color:#dddddd;color:#666666;text-shadow:1px 1px 3px #666666;">The briard is known as a heart wrapped in fur. N神的研究所</p>
+		<p style="font-size:2em;background-color:#cccccc;color:#ffffff;text-shadow:2px 2px 7px #111111;">The briard is known as a heart wrapped in fur. N神的研究所</p>
+		<p style="font-size:2em;background-color:#bbbbbb;color:#cccccc;text-shadow:-1px -2px 0px #666666;">The briard is known as a heart wrapped in fur. N神的研究所</p>
+		<p style="font-size:2em;background-color:#aaaaaa;color:#ffffff;text-shadow:-1px -1px 0px #666666;">The briard is known as a heart wrapped in fur. N神的研究所</p>
+
+		<h1>pseudo-elements: first-letter && first-line && :link ,:visited</h1>
+		<!--pseudo element 就像一个额外的元素包围在第一行和第一两个字母
+		pseudo class 就像额外的class属性值，例如link的 :hover-->
+		<p id="pseudo">The <a href="http://en.wikipedia.org/wiki/Briard">briard</a>, or berger de brie, is a large breed of dog traditionally used as a herder and guardian of sheep.</p>
+		<!--注意缩小浏览器，第二行就不会被加粗-->
+
+		<h1>Link Visited</h1>
+		
+		<div id="testLinks">
+			<ul>
+				<li><a href="http://en.wikipedia.org/wiki/Basset_Hound">Basset Hound</a></li>
+				<li><a href="http://en.wikipedia.org/wiki/Beagle">Beagle</a></li>
+				<li><a href="http://en.wikipedia.org/wiki/Bearded_Collie">Bearded Collie</a></li>
+				<li><a href="http://en.wikipedia.org/wiki/Beauceron">Beauceron</a></li>
+				<li><a href="http://en.wikipedia.org/wiki/Bedlington_Terrier">Bedlington Terrier</a></li>
+				<li><a href="http://en.wikipedia.org/wiki/Belgian_Shepherd_Dog_(Groenendael)">Belgian Shepherd</a></li>
+				<li><a href="http://en.wikipedia.org/wiki/Bergamasco_Shepherd">Bergamasco</a></li>
+				<li><a href="http://en.wikipedia.org/wiki/Bichon_Fris�">Bichon Frise</a></li>
+				<li><a href="http://en.wikipedia.org/wiki/Bloodhound">Bloodhound</a></li>
+			</ul>
+		</div>
+		<ul>
+			<li><a href="http://en.wikipedia.org/wiki/Bolognese_(dog)">Bolognese</a></li>
+			<li><a href="http://en.wikipedia.org/wiki/Border_Collie">Border Collie</a></li>
+			<li><a href="http://en.wikipedia.org/wiki/Border_Terrier">Border Terrier</a></li>
+			<li><a href="http://en.wikipedia.org/wiki/Borzoi">Borzoi</a></li>
+			<li><a href="http://en.wikipedia.org/wiki/Bouvier_des_Flandres">Bouvier des Flandres</a></li>
+			<li><a href="http://en.wikipedia.org/wiki/Briard">Briard</a></li>
+			<li><a href="http://en.wikipedia.org/wiki/Bull_Terrier">Bull Terrier</a></li>
+			<li><a href="http://en.wikipedia.org/wiki/Bulldog">Bulldog</a></li>
+		</ul>
+
+
+		<form>
+			<input type="text" class="textPseudoTest" value="Enter email address..." />
+			<input type="submit" class="pseudoTest" />
+		</form>
+
+
+		</div>
+
+
 
 
 	
@@ -1112,8 +1424,6 @@
 
 			table.clear {
 				border: none;
-
-
 				}
 			table.clear td{
 				border: none;
@@ -1128,70 +1438,17 @@
 				width: 100px;
 			}
 
-			h1.backColor {
+			/*h1.backColor {
 				background-color: DarkCyan;
 				padding: 20px;
 				color: white
-			}
+			}*/
 		
-			p.zero {
-				background-color: rgb(238,62,128);margin: 0px;color: white;}
-			p.one {
-				background-color: rgb(244,90,139);margin: 0px;color: white;}
-			p.two {
-				background-color: rgb(243,106,152);margin: 0px;color: white;}
-			p.three {
-				background-color: rgb(244,123,166);margin: 0px;color: white;}
-			p.four {
-				background-color: rgb(245,140,178);margin: 0px;color: white;}
-			p.five {
-				background-color: rgb(246,159,192);margin: 0px;color: white;}
-			p.six {
-				background-color: rgb(245,176,204);margin: 0px;color: white;}
-			p.seven {
-				background-color: rgb(0,187,136);margin: 0px;color: white;}
-			p.eight {
-				background-color: rgb(140,202,242);margin: 0px;color: white;}
-			p.nine {
-				background-color: rgb(114,193,240);margin: 0px;color: white;}
-			p.ten {
-				background-color: rgb(84,182,237);margin: 0px;color: white;}
-			p.eleven {
-				background-color: rgb(48,170,233);margin: 0px;color: white;}
-			p.twelve {
-				background-color: rgb(0,160,230);margin: 0px;color: white;}
-			p.thirteen {
-				background-color: rgb(0,149,226);margin: 0px;color: white;}
-			p.fourteen {
-				background-color: rgb(0,136,221);margin: 0px;color: white;}
+		
 
-			/*无衬线字体 */
-			.sans-serifFont{
-				font-family: Arial, Verdana, Helvetica,"Microsoft YaHei", "微软雅黑", STXihei, "华文细黑",SimHei,"黑体",SimSun, "宋体",sans-serif;}
-			}
-
-			/*有衬线字体 */
-			.serifFont{
-				font-family: Georigia, Times, "Times New Roman",SimSun, "宋体",serif;
-			}
 			
-			.monospaceFont{
-				font-family:"Courier New", Courier, monospace;
-				font-weight: bold; /*粗细可选值 normal  bold */
-			}
 
-			p#pixelSize{
-				font-size: 12px;
-			}
-			p#percentSize
-			{
-				font-size: 75%;
-			}
-			p#emsSize
-			{
-				font-size:0.75em;
-			}
-			
+
 			div.w_h {
 				width: 300px;
 				height: 300px;
@@ -1505,4 +1762,6 @@
 			*/
 
 		</style>
+
+		</body>
 </html>

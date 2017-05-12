@@ -1,0 +1,21 @@
+@font-face {
+	font-family: 'Source Code Pro';
+	font-weight: 400;
+	font-style: normal;
+	font-stretch: normal;
+	src: url('fonts/EOT/SourceCodePro-Regular.eot') format('embedded-opentype'), url('fonts/WOFF2/TTF/SourceCodePro-Regular.ttf.woff2') format('woff2'), url('fonts/WOFF/OTF/SourceCodePro-Regular.otf.woff') format('woff'), url('fonts/OTF/SourceCodePro-Regular.otf') format('opentype'), url('fonts/TTF/SourceCodePro-Regular.ttf') format('truetype');
+}
+
+.title {
+	font-family: Arial, Verdana, Helvetica, "Microsoft YaHei", "微软雅黑", STXihei, "华文细黑", SimHei, "黑体", SimSun, "宋体", sans-serif;
+	font-weight: bold;
+	background-color: DarkCyan;
+	padding: 14px;
+	color: white;
+	clear: both;
+	/*float 需要换行的元素要加clear，让其左右不触碰任何其他元素
+
+				可选值  left right both none
+				*/
+	margin: 0 auto;
+}
